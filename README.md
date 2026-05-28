@@ -50,13 +50,3 @@ curl -X POST http://localhost:8080/api/parking/calculate \
 This is a small Java/Spring Boot practice project built to strengthen Java
 fundamentals, OOP understanding, and backend API structure.
 
-Then:
-
-```bash
-
-git add README.md .gitignore
-
-git commit -m "docs: add README and housekeeping"
-
-git push
-```
