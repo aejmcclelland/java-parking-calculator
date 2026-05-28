@@ -52,9 +52,6 @@ fundamentals, OOP understanding, and backend API structure.
 
 Then:
 
-````bash
-Then:
-
 ```bash
 
 git add README.md .gitignore
@@ -62,4 +59,4 @@ git add README.md .gitignore
 git commit -m "docs: add README and housekeeping"
 
 git push
-````
+```
