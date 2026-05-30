@@ -1,5 +1,11 @@
 # Parking Calculator
 
+![Tests](https://img.shields.io/badge/tests-10%20passing-brightgreen)
+
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3-green)
+
+![JUnit](https://img.shields.io/badge/JUnit-5-blue)
+
 A small Java/Spring Boot API demonstrating object-oriented design through
 interchangeable parking tariff strategies.
 
