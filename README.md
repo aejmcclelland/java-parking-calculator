@@ -11,15 +11,36 @@ interchangeable parking tariff strategies.
 - Spring Boot REST controller
 - Service layer
 - Basic request/response DTOs
+- JUnit unit testing
+- Testing multiple strategy implementations
 
 ## OOP concept
 
 The project uses a `ParkingChargeStrategy` interface with multiple
-implementations, such as hourly and flat-rate tariffs.
+implementations, including hourly, flat-rate, and all-day tariffs.
+
 
 The `ParkingCalculatorService` works with the interface rather than a specific
 concrete class. This allows different pricing strategies to be selected at
 runtime without changing the controller or duplicating calculation logic.
+
+## Testing
+
+This project includes unit tests for the parking tariff strategy classes.
+
+Current test coverage includes:
+
+- Hourly rate calculation
+- Flat-rate calculation
+- All-day flat charge up to 24 hours
+- Additional all-day charge beyond 24 hours
+- Strategy behaviour using JUnit assertions
+
+Current test status:
+
+```bash
+Tests run: 7, Failures: 0, Errors: 0
+```
 
 ## Run the app
 
