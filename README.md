@@ -4,7 +4,12 @@
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3-green)
 ![JUnit](https://img.shields.io/badge/JUnit-5-blue)
 
+
 A small Java/Spring Boot API built as a focused practice project for object-oriented design, strategy-based polymorphism, testing, and simple REST API structure.
+
+<p align="center">
+  <img src="docs/parking-calculator-flow.png" alt="Parking Calculator API strategy pattern flow diagram" width="650">
+</p>
 
 ## What this project demonstrates
 
