@@ -42,3 +42,6 @@ build/
 
 private/
 
+# Local AI analysis/study prompts
+docs/portfolio-analysis-prompt.md
+

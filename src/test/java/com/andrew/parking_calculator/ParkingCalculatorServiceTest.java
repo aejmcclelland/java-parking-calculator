@@ -23,9 +23,9 @@ class ParkingCalculatorServiceTest {
                 new AllDayRateStrategy());
 
         ParkingCalculatorService service = new ParkingCalculatorService(strategies);
-        
+
         double result = service.calculateCharge(3, "hourly");
-        
+
         assertEquals(15.00, result);
     }
 
@@ -37,21 +37,21 @@ class ParkingCalculatorServiceTest {
                 new AllDayRateStrategy());
 
         ParkingCalculatorService service = new ParkingCalculatorService(strategies);
-        
+
         double result = service.calculateCharge(30, "all-day");
-        
+
         assertEquals(15.00, result);
     }
 
     @Test
-    void throwsExceptionForInvalidTariffType() {
+    void shouldThrowExceptionForInvalidTariffType() {
         List<ParkingChargeStrategy> strategies = List.of(
                 new HourlyRateStrategy(),
                 new FlatRateStrategy(),
                 new AllDayRateStrategy());
-        
+
         ParkingCalculatorService service = new ParkingCalculatorService(strategies);
-       
+
         IllegalArgumentException exception = assertThrows(
                 IllegalArgumentException.class,
                 () -> service.calculateCharge(3, "invalid"));
